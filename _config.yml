@@ -107,8 +107,8 @@ defaults:
       related: true
   # _projects
   - scope:
-      path: "_projects"
-      type: posts
+      path: ""
+      type: projects
     values:
       layout: single
       author_profile: true
@@ -130,6 +130,3 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-projeccts:
-  type: liquid
-  path: /projects/
