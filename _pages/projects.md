@@ -1,6 +1,8 @@
 ---
-title: "Projects by year"
+title: Projects
+layout: collection
 permalink: /projects/
-layout: posts
-author_profile: true
+collection: projects
+entries_layout: grid
+classes: wide
 ---
