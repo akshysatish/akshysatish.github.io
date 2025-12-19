@@ -103,7 +103,7 @@ defaults:
   # _projects
   - scope:
       path: "_projects"
-      type: projects
+      type: posts
     values:
       layout: single
       author_profile: true
@@ -125,3 +125,6 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+projeccts:
+  type: liquid
+  path: /projects/
