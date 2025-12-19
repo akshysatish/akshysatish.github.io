@@ -1,4 +1,3 @@
-
 ---
 title: "Earthquake Predictions"
 excerpt_separator: "<!--more-->"
