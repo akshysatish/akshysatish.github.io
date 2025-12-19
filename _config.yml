@@ -87,6 +87,11 @@ footer:
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/akshay-satish/"
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+    sort_by: order
 
 defaults:
   # _posts
