@@ -1,5 +1,5 @@
 ---
-title: "Earthquake Predictions"
+title: "Graph based keyword extraction"
 excerpt_separator: "<!--more-->"
 categories:
   - Blog
@@ -9,26 +9,22 @@ tags:
   - standard
 ---
 
-![Earthquake visual](/assets/images/earthquake.jpg "Earthquake")
+![Keyword graph header](/assets/images/proj4tab.jpg "Keyword graph")
 
-A data mining project that attempts to understand geospatial data and visualize it to analyze earthquake data. Spatial region based trends, Earthquake prediction trends visualized using spatial data.
+This project implements a Natural Language Processing model blended with graph method K-Truss/k-core truss decomposition to create a Graph Based Keyword Extractor. 
 
 <!--more-->
 
-The dataset used is the Global Catalog of Calibrated Earthquake Locations that has been collected from 1960 to present date from the U.S. Geological Survey data release. The data collected is obtained from more than 18,000 earthquakes from 250 well-distributed clusters that has a high confidence with very low uncertainty constrained to 1-5km.The data chosen is restricted to the 40 stations in USA distributed across the country in multiple clusters containing events from 1960 to 2021
+The keywords or keyphrases extracted are done so based on relevance or how important the word is in context of the sentence. Words of a sentence are ranked to get the most important words or keywords.
 
-Input features: Date & Time of event, Longitude, Latitude, Magnitude, Magnitude type, Depth, Ground Truth.
+A k-truss in a graph is a subset of the graph such that every edge in the subject is supported by at least k-2 other edges that form triangles with that particular edge. A k-truss is maximal when it is not a subgraph of another k-truss. We want to find the maximal k-trusses of a graph.
 
-DBSCAN is used to perform spatial clustering which generates a set of clusters classifying the intensity of the earthquakes. LSTM is used for Magnitude Prediction and a heatmap is generated indicating hotzones of high risk regions. The LSTM model is built as a Sequential model with LSTM layers using mean squared error as the loss function and Adam optimizer.
+First, a set of stopwords are defined. Then, the tokens in a sentence are extracted and cleaned of stopwords. These clean tokens form an initial complete graph. The edges are traversed to appropriately weigh them and the resulting weighted graphs are used to generate and order a list of keywords. The resulting subgraph of related keywords look like
 
-The results visualize hotzones based on the predictions made by the LSTM model
+![Keyword graoh is visualized.](/assets/images/proj4res.png "Keyword graph")
 
-![Earthquake hotones are visualized.](/assets/images/ep1.png "Earthquake hotzones")
+Tools and Libraries used: Natural Language Toolkit(nltk), Textacy, Spacy, Torch, Keras, SKLearn, BERTTokenizer, NetworkX.
 
-Tools and Libraries used: Pandas, Matplotlib, Numpy, Geopandas, scikit-learn, Folium (to visualize the map and hotzones)
+Conference Presentation: Vijaya Shetty S., Akshay S., Shritej Reddy B.S., Rakesh H., Mihir M., Shetty J. (2022) Graph-Based Keyword Extraction for Twitter Data. In: Shetty N.R., Patnaik L.M., Nagaraj H.C., Hamsavath P.N., Nalini N. (eds) Emerging Research in Computing, Information, Communication and Applications. Lecture Notes in Electrical Engineering, vol 790. Springer, Singapore. <https://doi.org/10.1007/978-981-16-1342-5_68>
 
-Dataset: Global Catalog of Calibrated Earthquake Locations Harley M. Benz, 2021, Global Catalog of Calibrated Earthquake Locations, U.S. Geological Survey data release, https://doi.org/10.5066/P95R8K8G.
-
-This problem is widely applicable to a lot of organizations that can use this data to decide on how to best manage the incoming disaster.
-
-Find code here: Github Repository-EarthquakePredictions
+Find code here: <https://github.com/akshysatish/K-Truss-GraphBasedKeyword>
