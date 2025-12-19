@@ -5,9 +5,8 @@
 layout: single
 author_profile: true
 ---
-# About Me
 
-I am a **Data Scientist** and **ML Engineer** with experience in working with multi-dimensional datasets to generate actionable insights. My primary interests are in the natural language domain but my focus spans the larger data science landscape. I was first interested in data when I saw a TED talk on data visualization and it mesmerized me. This led me to explore the possibilities presented by data science.
+I am a **Data Scientist** and **ML Engineer** with experience in working with multi-dimensional datasets to generate actionable insights. I graduated with a **Masters in Computer Science** from **Purdue University**. My primary interests are in the natural language domain but my focus spans the larger data science landscape. I was first interested in data when I saw a TED talk on data visualization and it mesmerized me. This led me to explore the possibilities presented by data science.
 
 My main projects are:
   - Reducing Hallucinations in LLMs
