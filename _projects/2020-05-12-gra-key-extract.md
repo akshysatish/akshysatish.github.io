@@ -9,17 +9,11 @@ tags:
   - standard
 ---
 
-![Earthquake visual](/assets/images/earthquake.jpg "")
+![Earthquake visual](/assets/images/earthquake.jpg "Earthquake")
 
 A data mining project that attempts to understand geospatial data and visualize it to analyze earthquake data. Spatial region based trends, Earthquake prediction trends visualized using spatial data.
 
 <!--more-->
-
-This post has a manual excerpt `<!--more-->` set after the second paragraph. The following YAML Front Matter has also be applied:
-
-```yaml
-excerpt_separator: "<!--more-->"
-```
 
 The dataset used is the Global Catalog of Calibrated Earthquake Locations that has been collected from 1960 to present date from the U.S. Geological Survey data release. The data collected is obtained from more than 18,000 earthquakes from 250 well-distributed clusters that has a high confidence with very low uncertainty constrained to 1-5km.The data chosen is restricted to the 40 stations in USA distributed across the country in multiple clusters containing events from 1960 to 2021
 
@@ -29,7 +23,7 @@ DBSCAN is used to perform spatial clustering which generates a set of clusters c
 
 The results visualize hotzones based on the predictions made by the LSTM model
 
-![Earthquake hotones are visualized.](/assets/images/ep1.jpg "Earthquake hotzones")
+![Earthquake hotones are visualized.](/assets/images/ep1.png "Earthquake hotzones")
 
 Tools and Libraries used: Pandas, Matplotlib, Numpy, Geopandas, scikit-learn, Folium (to visualize the map and hotzones)
 
