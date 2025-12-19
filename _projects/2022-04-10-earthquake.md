@@ -31,4 +31,4 @@ Dataset: Global Catalog of Calibrated Earthquake Locations Harley M. Benz, 2021,
 
 This problem is widely applicable to a lot of organizations that can use this data to decide on how to best manage the incoming disaster.
 
-Find code here: Github Repository-EarthquakePredictions
+Find code here: <https://github.com/akshysatish/EarthquakePredictions>
