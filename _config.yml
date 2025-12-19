@@ -35,7 +35,6 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
-  - _projects
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -111,7 +110,7 @@ defaults:
       read_time: true
       comments: true
       share: true
-      related: true 
+      related: true
   # _pages
   - scope:
       path: "_pages"
