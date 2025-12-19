@@ -30,6 +30,3 @@ This implementation works with only two players with the trained agents strategi
 Tools and Libraries used: gym, retro, torch, pickle, Open AI Gym wrappers , Retro game integration, Retro API
 
 Find code here: <https://github.com/akshysatish/DQN-BattleCityNes>
-This problem is widely applicable to a lot of organizations that can use this data to decide on how to best manage the incoming disaster.
-
-Find code here: Github Repository-EarthquakePredictions
