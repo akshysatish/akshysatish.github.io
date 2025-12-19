@@ -103,7 +103,7 @@ defaults:
       related: true
   # _projects
   - scope:
-      path: ""
+      path: "_projects"
       type: projects
     values:
       layout: single
