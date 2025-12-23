@@ -13,10 +13,12 @@ tags:
 SQL style databases deal with structured data in the form of rows and columns organized into tables. A lot of real world data, however, is unstructured which created the necessity for NoSQL databases. 
 
 Document-oriented databases or document stores are a category of NoSQL databases that stores data in the form of documents. They are inherently extended key-value stores but the document store relies on the internal structure of the document to extract metadata. They contrast strongly with relational databases as they store all information for a given object in a single instance in the database. Every object can have a different schema and is self-describing.
+
 ### Pros of document DBs
 - Schema-less, hence no restrictions in format and structure
 - Minimal maintenance is required once document is created
 - No foreign keys, documents can be independent of one another
+
 ### Cons of document DBs
 - Breaks atomicity requirements
 - Security is still a major existing challenge
@@ -37,6 +39,7 @@ A sample document encoded in JSON can look like this:
      "hobbies" : ["cooking", "coding"]
 }
 ```
+
 > Unlike relational databases, document stores have all data for an object in a single document entry and no additional work is required to retrieve the related data. Relationship between documents can be modelled by either embedding or referencing documents.
 
 Core operations of CRUD(Create, Retrieve, Update, and Delete) are similar to other databases. Some popular document stores are **MongoDB**, **DocumentDB**, **Aerospike**, and **CouchDB**.
@@ -55,6 +58,7 @@ Core operations of CRUD(Create, Retrieve, Update, and Delete) are similar to oth
 
 ## Indexing
 Indexing is essential to speed up data retrieval operations and avoid slow, inefficient full collection scans. 
+
 ### MongoDB Indexing
 MongoDB uses one of two indexing methods:
 - User-defined shard key index made up of one or more fields that appear in all documents
