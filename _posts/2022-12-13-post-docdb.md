@@ -42,6 +42,7 @@ A sample document encoded in JSON can look like this:
 Core operations of CRUD(Create, Retrieve, Update, and Delete) are similar to other databases. Some popular document stores are **MongoDB**, **DocumentDB**, **Aerospike**, and **CouchDB**.
 
 ## Mapping between SQL and MongoDB
+
 | **SQL terminology**                    | **MongoDB terminology**                        |
 |----------------------------------------|------------------------------------------------|
 | Database                               | Database                                       |
@@ -59,6 +60,7 @@ MongoDB uses one of two indexing methods:
 - User-defined shard key index made up of one or more fields that appear in all documents
 - Hashed index on a single field that must appear in every document
 > By default, all collections have a unique index on the “_id” field
+
 #### Shard key index
 Data is distributed among shards and a shard key is used to distribute a collection’s documents across shards. Shard keys determine which shard contains the document based on values in the fields chosen to index
 
