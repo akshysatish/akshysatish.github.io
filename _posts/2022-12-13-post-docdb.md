@@ -68,7 +68,7 @@ Another strategy involves computing hash of the shard key field’s value and as
 
 This strategy facilitates more even data distribution however they do not provide efficient range-based operations. While a range of shard keys may be “close”, their hashed values are unlikely to be on the same chunk
 
-![skindexhash](/assets/images/skindexhash.png "Shard key index with hashing")
+![skindexhash](/assets/images/skindexhash.jpg "Shard key index with hashing")
 
 > Read further on shard key selection strategies and index data structures in the mongoDB manual or below pdf
 
